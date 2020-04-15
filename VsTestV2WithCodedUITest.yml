@@ -14,7 +14,7 @@ jobs:
   steps:              
   - task: VisualStudioTestPlatformInstaller@1
     displayName: 'Visual Studio Test Platform Installer'
-    inputs:
+    inputs:     
       versionSelector: 'latestPreRelease'
       
   - task: VSTest@2
@@ -22,7 +22,7 @@ jobs:
       testSelector: 'testAssemblies'
       testAssemblyVer2: '**/*CUIT*.dll'
       uiTests: true
-      vsTestVersion: 'toolsInstaller'
+      searchFolder: '$(System.DefaultWorkingDirectory)\bin\Release\'
      
 
 
