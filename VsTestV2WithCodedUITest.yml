@@ -23,7 +23,7 @@ jobs:
       testAssemblyVer2: '**/*CUIT*.dll'
       uiTests: true
       searchFolder: '$(System.DefaultWorkingDirectory)\bin\Release\'
-      vsTestVersion: 'toolsInstaller'
+      vsTestVersion: 'latest'
      
 
 
